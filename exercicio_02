@@ -1,0 +1,54 @@
+// Portugol
+
+programa
+{
+    funcao inicio()
+    {
+        // Declaração das variáveis
+        real numero1, numero2, soma, subtracao, multiplicacao
+
+        // Entrada de dados
+        escreva("Digite o primeiro número: ")
+        leia(numero1)
+
+        escreva("Digite o segundo número: ")
+        leia(numero2)
+
+        // Processamento
+        soma = numero1 + numero2
+        subtracao = numero1 - numero2
+        multiplicacao = numero1 * numero2
+
+        // Saída de dados
+        escreva("\nResultado da soma: ", soma)
+        escreva("\nResultado da subtração: ", subtracao)
+}
+    }
+
+
+
+// Java
+
+import java.util.Scanner;
+
+public class OperacoesDoisNumeros {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Digite o primeiro numero: ");
+        int num1 = entrada.nextInt();
+
+        System.out.print("Digite o segundo numero: ");
+        int num2 = entrada.nextInt();
+
+        int soma = num1 + num2;
+        int subtracao = num1 - num2;
+        int multiplicacao = num1 * num2;
+
+        System.out.println("Soma: " + soma);
+        System.out.println("Subtracaoo: " + subtracao);
+        System.out.println("Multiplicacao: " + multiplicacao);
+
+        entrada.close();
+    }
+}
