@@ -1,0 +1,83 @@
+// Portugol
+
+programa {
+    funcao inicio() {
+        // Variáveis para armazenar o preço das viagens
+        real precoAlemanha, precoPortugal, precoItalia
+        // Variáveis para armazenar a quantidade de pessoas
+        inteiro pessoasAlemanha, pessoasPortugal, pessoasItalia
+        // Variável para o total
+        real totalViagem
+
+        // Pedindo preço das viagens
+        escreva("Digite o preço da viagem para a Alemanha: ")
+        leia(precoAlemanha)
+
+        escreva("\nDigite o preço da viagem para Portugal: ")
+        leia(precoPortugal)
+
+        escreva("\nDigite o preço da viagem para a Itália: ")
+        leia(precoItalia)
+
+        // Pedindo a quantidade de pessoas para cada destino
+        escreva("\nDigite a quantidade de pessoas que irão para a Alemanha: ")
+        leia(pessoasAlemanha)
+
+        escreva("\nDigite a quantidade de pessoas que irão para Portugal: ")
+        leia(pessoasPortugal)
+
+        escreva("\nDigite a quantidade de pessoas que irão para a Itália: ")
+        leia(pessoasItalia)
+
+        // Calculando o total da viagem
+        totalViagem = (precoAlemanha * pessoasAlemanha) +
+                      (precoPortugal * pessoasPortugal) +
+                      (precoItalia * pessoasItalia)
+
+        // Mostrando o resultado
+        escreva("\nO valor total da viagem para todos os destinos é: R$ ", totalViagem)
+    }
+}
+
+
+
+
+
+// Java
+
+import java.util.Scanner;
+
+public class ValorViagem {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        // Alemanha
+        System.out.print("Digite o preco da viagem para a Alemanha: R$ ");
+        double precoAlemanha = entrada.nextDouble();
+        System.out.print("Digite a quantidade de pessoas para a Alemanha: ");
+        int pessoasAlemanha = entrada.nextInt();
+
+        // Portugal
+        System.out.print("Digite o preco da viagem para Portugal: R$ ");
+        double precoPortugal = entrada.nextDouble();
+        System.out.print("Digite a quantidade de pessoas para Portugal: ");
+        int pessoasPortugal = entrada.nextInt();
+
+        // Itália
+        System.out.print("Digite o preco da viagem para a Itália: R$ ");
+        double precoItalia = entrada.nextDouble();
+        System.out.print("Digite a quantidade de pessoas para Itália: ");
+        int pessoasItalia = entrada.nextInt();
+
+        // Calculando valor total por destino
+        double totalAlemanha = precoAlemanha * pessoasAlemanha;
+        double totalPortugal = precoPortugal * pessoasPortugal;
+        double totalItalia = precoItalia * pessoasItalia;
+
+        double totalViagem = totalAlemanha + totalPortugal + totalItalia;
+
+        System.out.println("O valor total da viagem para todos os destinos é: R$ " + totalViagem);
+
+        entrada.close();
+    }
+}
