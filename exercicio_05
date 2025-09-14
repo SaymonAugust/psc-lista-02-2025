@@ -1,0 +1,41 @@
+// Portugol
+
+programa {
+  funcao inicio() {
+    real preco_litro, litros, total
+
+    escreva("Digite o preço do litro da gasolina R$: ")
+    leia(preco_litro)
+
+    escreva("Digite quantos litros foram vendidos: ")
+    leia(litros)
+
+    total = preco_litro * litros
+
+    escreva("\nO cliente deverá pagar: R$ ", total)
+    
+  }
+}
+
+
+// Java
+
+import java.util.Scanner;
+
+public class ValorGasolina {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Digite o preco do litro da gasolina: R$ ");
+        double precoLitro = entrada.nextDouble();
+
+        System.out.print("Digite quantos litros foram vendidos: ");
+        double litrosVendidos = entrada.nextDouble();
+
+        double total = precoLitro * litrosVendidos;
+
+        System.out.println("O cliente devera pagar: R$ " + total);
+
+        entrada.close();
+    }
+}
