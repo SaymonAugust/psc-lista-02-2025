@@ -1,0 +1,29 @@
+// Portugol
+programa {
+  funcao inicio() {
+    real numero
+    escreva("Informe um numero: ")
+    leia(numero)
+
+    escreva("O número informado foi: ", numero)
+  }
+}
+
+
+// Codigo em java
+import java.util.Scanner;
+
+public class NumeroInformado {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        // Pedindo um número ao usuário
+        System.out.print("Digite um número: ");
+        int numero = entrada.nextInt();
+
+        // Mostrando o número informado
+        System.out.println("O número informado foi " + numero);
+
+        entrada.close();
+    }
+}
